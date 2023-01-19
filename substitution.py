@@ -9,17 +9,18 @@ def char_to_num(sentance):
     for i in range(len(ob_sentance)):
         ob_num.append(dict_a[ob_sentance[i]])
     return ob_num
-sentance = "jujtbtfdsf"
+sentance = "hknudwhznshzm"
 print(char_to_num(sentance))
 ob_num = char_to_num(sentance)
 #2. 暴力破解
 def guess(ob_num):
-    for k in range(25):
+    for k in range(26):
         p_num = []
         p_char = []
         for i in ob_num:
-            plain_num = (i-k) % 25
+            plain_num = (i-k) % 26
             p_num.append(plain_num)
+        print(k)
         print(p_num)
         for i in range(len(p_num)):
             p_char.append(new_dict[p_num[i]])
