@@ -8,5 +8,6 @@ def change_to_block(sentance):
     return ob_sentance
 print(change_to_block('ISTIACSERTE'))
 
+#排列组合
 for e in it.permutations(change_to_block('ISTIACSERTE'), 4):
     print(''.join(e), end=', ')

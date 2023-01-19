@@ -9,7 +9,7 @@ def char_to_num(sentance):
     for i in range(len(ob_sentance)):
         ob_num.append(dict_a[ob_sentance[i]])
     return ob_num
-sentance = "hknudwhznshzm"
+sentance = "moilvgofxtmzflz"
 print(char_to_num(sentance))
 ob_num = char_to_num(sentance)
 #2. 暴力破解
